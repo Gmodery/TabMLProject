@@ -12,10 +12,15 @@ Given enough time, the dataset could grow to contain spectrograms of every strin
 The current audio file (audio\Pentatonic.wav) is a simple recording of the pentatonic scale. It produces the following output:
 
 --------------------0-3-
+
 ----------------0-0-----
+
 ------------0-2---------
+
 --------0-2-------------
+
 ----0-2-----------------
+
 0-3---------------------
 
 Note that the model misinterpereted the third-to-last note as an open B string, where it should have been third fret B string. This may be due to a class imbalance in the training data, which should be addressed.
