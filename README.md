@@ -8,3 +8,14 @@ Class names are written such that they correspond to how the strings would be pl
 For example, the class name for an open low-E string is wxxxxx, where w corresponds to 0 and x corresponds to unplayed strings. These class names are "decoded" after all predictions have been made to produce the familiar tablature structure. The resulting string for this example would be 0-----.
 
 Given enough time, the dataset could grow to contain spectrograms of every string and chord, though this would be a monumental task.
+
+The current audio file (audio\Pentatonic.wav) is a simple recording of the pentatonic scale. It produces the following output:
+
+--------------------0-3-
+----------------0-0-----
+------------0-2---------
+--------0-2-------------
+----0-2-----------------
+0-3---------------------
+
+Note that the model misinterpereted the third-to-last note as an open B string, where it should have been third fret B string. This may be due to a class imbalance in the training data, which should be addressed.
